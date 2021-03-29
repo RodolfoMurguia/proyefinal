@@ -7,4 +7,4 @@ def positions():
     description = str(input("description: "))
     payment = int(input("veces de pago en el mes: "))
 
-positions()
+#positions()

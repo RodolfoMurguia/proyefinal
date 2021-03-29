@@ -12,4 +12,4 @@ def employees():
     salaryid = int(input("salary id: "))
     position = int(input("position id: "))
 
-employees()
+#employees()

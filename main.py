@@ -1,6 +1,6 @@
 """programa principal"""
 
-#from position import positions
+from position import positions
 from salary import salaries
 from employee import employees
 

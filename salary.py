@@ -9,4 +9,4 @@ def salaries():
     taxes = float(input("impuestos: "))
     insurance = float(input("seguro: "))
 
-salaries()
+#salaries()
