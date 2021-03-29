@@ -2,7 +2,7 @@
 
 def employees():
 
-    id_emplo = input("id: ")
+    id_emplo = int(input("id: "))
     first_name = str(input("name: "))
     last_name = str(input("name: "))
     phone_number = str(input("phone: "))
