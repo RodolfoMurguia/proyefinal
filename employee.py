@@ -3,8 +3,13 @@
 def employees():
 
     id_emplo = input("id: ")
-    name = str(input("name: "))
-    baseSalary = float(input("salario base: "))
-    bonusAmount= float(input("bono de empleado: "))
-    taxes = float(input("impuestos: "))
-    insurance = float(input("seguro: "))
+    first_name = str(input("name: "))
+    last_name = str(input("name: "))
+    phone_number = str(input("phone: "))
+    address = str(input("direction: "))
+    email = str(input("email: "))
+    imms = int(input("security number: "))
+    salaryid = int(input("salary id: "))
+    position = int(input("position id: "))
+
+employees()
