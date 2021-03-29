@@ -1,6 +1,6 @@
 """salaries"""
 
-def salary():
+def salaries():
     
     id_salary = input("id: ")
     name = str(input("name: "))
@@ -9,4 +9,4 @@ def salary():
     taxes = float(input("impuestos: "))
     insurance = float(input("seguro: "))
 
-salary()
+salaries()

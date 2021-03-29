@@ -1,5 +1,9 @@
 """programa principal"""
 
+#from position import positions
+#from salary import salaries
+#from employee import employees
+
 print("Bienvenido al programa de nóminas")
 print("Opciones de búsqueda")
 print("a: Puestos")
@@ -9,13 +13,10 @@ print("c: Empleados")
 option = input("Qué quieres consultar?: ")
 
 if option == "a":
-    print("hola")
-
+    positions()
 elif option == "b":
-    print("hi")
-
+    salary()
 elif option == "c":
-    print("cero")
-    
+    employees()
 else:
     print("no existe esa opcion")
