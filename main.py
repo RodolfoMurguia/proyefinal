@@ -1,8 +1,8 @@
 """programa principal"""
 
 #from position import positions
-#from salary import salaries
-#from employee import employees
+from salary import salaries
+from employee import employees
 
 print("Bienvenido al programa de nóminas")
 print("Opciones de búsqueda")
