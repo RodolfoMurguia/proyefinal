@@ -1,0 +1,56 @@
+"""
+
+	Generar 3 tablas: Puestos, empleados y salarios
+  
+  -Conecion y tablas
+  -funciones e inserciones
+  -vistas
+  
+  Definicion de las vistas
+  
+  	-Positions:
+    	-id integer PRIMARY KEY
+      -name	text
+      -description text
+      -paymentNumbers integer
+      -deleted BOOLEAN
+      -createdDate DATETIME
+      -lastModifiedDate DATETIME
+      
+      -Salaries:
+        -id integer PRIMARY KEY
+        -name text
+        -baseSalary float
+        -isBonusSalary BOOLEAN
+        -bonusAmount FLOAT
+        -taxesPercentage FLOAT
+        -insurancePercentage FLOAT
+        -deleted BOOLEAN
+        -createdDate DATETIME
+        -lastModifiedDate DATETIME
+        
+       -Employees
+        -id
+        -firstName
+        -LastName
+        -phoneNumber
+        -address
+        -email
+        -socialSecurityNumber
+        -SalaryId
+        -PositionId
+        -deleted
+        -createdDate
+        -lastModifiedDate
+
+"""
+
+#Armado de tabla nueva
+def generateTable(conn):
+
+    DbObj = conn.cursor()
+
+    DbObj.execute("Create Table Empleados (Id integer PRIMARY KEY, Nombre TEXT, Apellido TEXT, Posicion TEXT, Salario FLOAT)")
+
+    conn.commit()
+
