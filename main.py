@@ -8,3 +8,14 @@ print("c: Empleados")
 
 option = input("Qué quieres consultar?: ")
 
+if option == "a":
+    print("hola")
+
+elif option == "b":
+    print("hi")
+
+elif option == "c":
+    print("cero")
+    
+else:
+    print("no existe esa opcion")
