@@ -11,13 +11,13 @@ def generateTables(conn):
 
 
     #Tabla de puestos de empleados
-    DbObj.execute("Create Table Positions (id integer PRIMARY KEY, name TEXT, description TEXT, paymentNumbers integer, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
+    DbObj.execute("Create Table Positions (id integer PRIMARY KEY AUTOINCREMENT, name TEXT, description TEXT, paymentNumbers integer, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
 
     #Tabla de Salarios
-    DbObj.execute("Create Table Salaries  (id integer PRIMARY KEY, name TEXT, baseSalary float, isBonusSalary BOOLEAN, BonusAmount FLOAT, taxesPercentage FLOAT, insurancePercentage FLOAT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
+    DbObj.execute("Create Table Salaries  (id integer PRIMARY KEY AUTOINCREMENT, name TEXT, baseSalary float, isBonusSalary BOOLEAN, BonusAmount FLOAT, taxesPercentage FLOAT, insurancePercentage FLOAT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
 
     #Tabla de empleados (Tabla Principal)
-    DbObj.execute("Create Table Employees (id integer PRIMARY KEY, firstName TEXT, lastName TEXT, phoneNumber TEXT, address TEXT, email TEXT, socialSecurityNumber TEXT, salaryid TEXT, positionId TEXT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
+    DbObj.execute("Create Table Employees (id integer PRIMARY KEY AUTOINCREMENT, firstName TEXT, lastName TEXT, phoneNumber TEXT, address TEXT, email TEXT, socialSecurityNumber TEXT, salaryid TEXT, positionId TEXT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
 
     conn.commit()
 
