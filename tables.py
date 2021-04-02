@@ -11,7 +11,7 @@ def generateTables(conn):
 
 
     #Tabla de puestos de empleados
-    DbObj.execute("Create Table Positions (id integer PRIMARY KEY AUTOINCREMENT, name TEXT, description TEXT, paymentNumbers integer, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
+    DbObj.execute("Create Table Positions (id integer PRIMARY KEY AUTOINCREMENT, name TEXT, description TEXT, paymentNumbers TEXT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
 
     #Tabla de Salarios
     DbObj.execute("Create Table Salaries  (id integer PRIMARY KEY AUTOINCREMENT, name TEXT, baseSalary float, isBonusSalary BOOLEAN, BonusAmount FLOAT, taxesPercentage FLOAT, insurancePercentage FLOAT, deleted BOOLEAN, createdDate DATETIME, lastModifiedDate DATETIME)")
@@ -25,4 +25,4 @@ def generateTables(conn):
 dataconection = generateDatabase()
 
 #A partir de la conexion, detonamos la creacion de tablas
-generateTables(dataconection)
+#generateTables(dataconection)
