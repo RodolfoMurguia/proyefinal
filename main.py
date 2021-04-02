@@ -13,10 +13,17 @@ print("c: Empleados")
 option = input("Qué quieres consultar?: ")
 
 if option == "a":
+
     positions()
+
 elif option == "b":
+
     salary()
+
 elif option == "c":
+
     employees()
+
 else:
+    
     print("no existe esa opcion")

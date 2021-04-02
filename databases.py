@@ -6,16 +6,19 @@
 
 import sqlite3 as sql
 
-#from sqlite3 import Error 
-
 #Generamos funcion de conexion a server y creacion de base de datos
 
 
 def generateDatabase():
     try:
+        #Intentamos abrir y conectarnos, si no existe la DB, la creara python
         conn = sql.connect('Payrolls.db')
+
+        #Retornamos objeto de conexion
         return conn
-    except :
+
+    except:
+
         print("Ha ocurrido un error al momento de conectarse a al DB:")
 
 generateDatabase()
